@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML PAGE</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        #left {
+            border-radius: 15px;
+            box-shadow: 10px 5px 15px 3px rgba(52, 52, 52, 0.457);
+            margin-top: -80px;
+            background-color: rgb(93, 177, 237);
+            width: 200px;
+            height: 520px;
+            position: fixed;
+            top: 120px;
+            margin-left: -10px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        #left h1 {
+            margin-top: 60px;
+            margin-left: 10px;
+            border: 2mm double goldenrod;
+            width: 130px;
+            height: 40px;
+            border-radius: 10px;
+            padding-left: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+
+        .marquee {
+            background-color: rgb(255, 136, 0);
+            height: 25%;
+            line-height: 28px;
+            opacity: 2;
+            margin-left: -10px;
+            margin-top: -2px;
+            /* width: 1250px; */
+        }
+
+        #upper img {
+            position: relative;
+            left: 280px;
+            top: 50px;
+            height: 450px;
+            width: 900px;
+            border-radius: 20px;
+        }
+        @media screen and (min-width:1430px) {
+            #upper img{
+                width: 1100px;
+                height: 550;
+            }
+        }
+        #sweett h1 {
+            position: relative;
+            top: 160px;
+            left: 32pc;
+            width: 400px;
+            text-align: center;
+            color: rgb(250, 90, 32);
+        }
+
+        #sweet {
+            position: relative;
+            display: inline-flex;
+            padding: 0px 73px;
+            margin: 153px 163px;
+            height: 700px;
+            width: 500px;
+        }
+
+        #sweet #s1 {
+            width: 300px;
+            height: 350px;
+            position: relative;
+            top: 80px;
+            left: 20px;
+            border-radius: 20px;
+        }
+        @media screen and (min-width:1430px) {
+            #sweett h1{
+            /* position: relative; */
+            left: 650px;
+            }
+           #sweet{
+            margin-left: 210px;
+            }
+        }
+        #s1-info {
+            color: aliceblue;
+            position: absolute;
+            top: 400px;
+            text-align: center;
+        }
+        
+        #s1-info .s1 {
+            display: inline-flex;
+            position: relative;
+            top: -250px;
+            left: 0px;
+        }
+
+        #sweet #s2 {
+            width: 300px;
+            height: 350px;
+            position: relative;
+            top: 80px;
+            left: 40px;
+            border-radius: 20px;
+        }
+        @media screen and (min-width:1430px) {
+            #sweet #s2{
+                width: 400px;
+                height: 350px;
+            }
+        }
+
+        #sweet #s3 {
+            width: 300px;
+            height: 350px;
+            position: relative;
+            top: 80px;
+            left: 60px;
+            border-radius: 20px;
+
+        }
+
+        div p {
+            padding: 0px 20px;
+            position: relative;
+            top: -300px;
+            left: 260px;
+            width: 900px;
+        }
+        @media screen and (min-width:1430px) {
+        div p{
+            left: 280px;
+            width: 1050px;
+            }
+        }
+        #nam h1 {
+            position: relative;
+            left: 500px;
+            top: -100px;
+            text-align: center;
+            color: rgb(250, 90, 32);
+            width: 500px;
+        }
+
+        #nam {
+            position: relative;
+            top: -120px;
+            text-align: center;
+        }
+        @media screen and (min-width:1430px) {
+            #nam h1{
+                left: 600px;
+            }
+        }
+        #namkeen {
+            display: inline-flex;
+            padding: 0px 0px;
+            margin: -100px -100px;
+            position: relative;
+            top: -130px;
+            left: 9pc;
+        }
+        @media screen and (min-width:1430px) {
+        #namkeen{
+                left: 15pc;
+            }
+        }
+        #namkeen .n1 {
+            width: 320px;
+            height: 300px;
+            position: relative;
+            top: 80px;
+            left: 180px;
+            border-radius: 20px;
+
+        }
+
+        #namkeen .n2 {
+            width: 320px;
+            height: 300px;
+            position: relative;
+            top: 80px;
+            left: 380px;
+            border-radius: 20px;
+        }
+
+        #nam-para {
+            padding: 0px 20px;
+            position: relative;
+            top: 320px;
+        }
+
+        #namkeen h1 {
+            position: relative;
+            top: 100px;
+            text-align: center;
+            color: rgb(250, 90, 32);
+        }
+
+        #about1 h1 {
+            position: relative;
+            top: 100px;
+            left: 31pc;
+            width: 500px;
+            text-align: center;
+            color: rgb(250, 90, 32);
+        }
+        @media screen and (min-width:1430px) {
+        #about1 h1{
+            left: 36pc;
+        }
+        }
+        #about h2 {
+            padding: 0px 20px;
+            position: relative;
+            top: 200px;
+            left: 230px;
+            width: 500px;
+        }
+
+        #about p {
+            position: relative;
+            padding: 0px 20px;
+            top: 220px;
+        }
+
+        #end h1 {
+            position: relative;
+            top: 230px;
+            left: 28pc;
+            width: 500px;
+            color: rgb(250, 90, 32);
+            text-align: center;
+        }
+        @media screen and (min-width:1430px) {
+        #end h1{
+            left: 36pc;
+        }
+        }
+        #contact-img {
+            position: relative;
+            top: 300px;
+            left: 18pc;
+            width: 550px;
+        }
+        @media screen and (min-width:1430px) {
+        #contact-img{
+            width: 750px;
+            left: 25pc;
+        }
+        }
+        #contact-img h4 {
+            position: relative;
+            top: 750px;
+        }
+
+        #contact-img h3 {
+            position: relative;
+            top: 100px;
+            left: 2%;
+            padding-bottom: 2%;
+            width: 500px;
+        }
+
+        #contact-img #mk {
+            top: 110px;
+            height: 65px;
+            width: 90px;
+            display: inline-grid;
+            position: relative;
+            left: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee class="marquee" behavior="" direction="" scrollamount="8" aria-current="time">|| Delivering PAN India &
+        Free Shipping
+        across India on Orders above ₹500/- || Estimated Standard Delivery Timeline of 5-7 Working Days, Though
+        Delivery Time May Vary Depending On Pin Code || CAUTION - Beware of Fraud!! We do not accept/encourage
+        online payment</marquee>
+    <div id="left">
+        <a id="H1" href="#upper">
+            <h1>Home</h1>
+        </a>
+        <a id="H2" href="#sweett">
+            <h1>Sweet</h1>
+        </a>
+        <a id="H3" href="#about1">
+            <h1>About</h1>
+        </a>
+        <a id="H4" href="#end">
+            <h1>Contact</h1>
+        </a>
+    </div>
+    <main>
+        <div id="upper">
+            <img src="upper - Copy.webp" alt="">
+        </div>
+        </div>
+        <div id="sweett">
+            <h1>Sweets</h1>
+        </div>
+        <div id="sweet">
+            <div>
+                <img id="s1" src="cake.jpg" alt="" height="10%" width="20%">
+            </div>
+            <div>
+                <img id="s2" src="sweet2.jpg" alt="">
+            </div>
+            <div>
+                <img id="s3" src="sweet3.png" alt="">
+            </div>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet laudantium magnam sit maxime laborum
+                voluptatem, error iure aut beatae blanditiis ea nobis esse, dolore suscipit! Labore beatae dolores at
+                atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facilis totam nulla animi
+                eaque quis quibusdam fuga, repudiandae nihil, non ipsum minima ut porro rerum facere ea laborum corporis
+                nisi beatae sequi! Quia vel ipsa impedit culpa quae minus est, eligendi, maxime accusantium distinctio
+                molestias sed vitae dicta id numquam possimus! Ea sunt perferendis blanditiis est minima distinctio quo
+                dolorem! Delectus placeat ratione vero impedit sint et reiciendis tempore, earum beatae maxime adipisci
+                assumenda odit. Impedit, doloremque delectus quod sit voluptates voluptas enim accusantium assumenda
+                quis nemo laborum sapiente libero quam accusamus. Quidem excepturi quaerat impedit, totam atque
+                doloribus enim dolor. Laboriosam obcaecati ipsam magnam sint nihil tenetur libero dolorum voluptatem
+                nemo temporibus quia tempora dolorem aliquid iste, quisquam velit, eligendi, esse possimus? Quisquam
+                provident iste aspernatur architecto tempore nam repudiandae consectetur at voluptatibus tenetur, ipsam
+                similique laborum eaque eveniet distinctio autem, magnam quaerat nemo quod incidunt nostrum voluptatum!
+                Dolore, natus obcaecati neque ipsa et blanditiis incidunt tempore velit quae itaque totam explicabo vero
+                autem unde ullam dicta facilis enim? Blanditiis dolorum labore illo asperiores, ipsam nemo itaque iure
+                doloribus ex, voluptatum provident dolores, optio consequuntur hic nesciunt fugiat porro inventore dolor
+                adipisci eveniet. Nesciunt facere deserunt debitis nostrum nisi atque quisquam, doloribus autem maiores
+                illo inventore blanditiis labore iusto assumenda officiis dolorem voluptates, soluta tenetur officia.
+                Totam eum aliquid nobis necessitatibus incidunt dolorum asperiores itaque eos, ex sed aperiam id
+                doloremque accusamus esse ad! Minima aliquam repellat quia aliquid repudiandae? Repellendus a culpa
+                optio, enim nemo aspernatur nisi dolor atque quia rem, excepturi fugiat nesciunt aperiam. Inventore
+                ullam assumenda magni, incidunt illo maiores id iste possimus suscipit veniam, autem perferendis harum
+                nihil exercitationem a delectus cupiditate, modi impedit natus. Inventore veritatis rem sunt quia?
+                Commodi exercitationem molestiae expedita ipsam perspiciatis eos aperiam tenetur, animi magni deleniti
+                iusto unde fugit asperiores. Quasi voluptate accusamus sunt quam, laborum facere magnam eligendi illum
+                nesciunt excepturi non harum rerum eum consequuntur quae, minima dolorum sit velit laudantium numquam.
+                Quos odio aperiam quis fugiat inventore aspernatur, esse mollitia. </p>
+        </div>
+        <div id="nam">
+            <h1>Namkeen</h1>
+        </div>
+        <div id="namkeen">
+            <div class="n1">
+                <img src="namkeen.jpg" alt="">
+            </div>
+            <div class="n2">
+                <img src="namkeen3 - Copy.png" alt="" height="334px" width="500px">
+            </div>
+        </div>
+        <div id="nam-para">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet laudantium magnam sit maxime laborum
+                voluptatem, error iure aut beatae blanditiis ea nobis esse, dolore suscipit! Labore beatae dolores at
+                atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facilis totam nulla animi
+                eaque quis quibusdam fuga, repudiandae nihil, non ipsum minima ut porro rerum facere ea laborum corporis
+                nisi beatae sequi! Quia vel ipsa impedit culpa quae minus est, eligendi, maxime accusantium distinctio
+                molestias sed vitae dicta id numquam possimus! Ea sunt perferendis blanditiis est minima distinctio quo
+                dolorem! Delectus placeat ratione vero impedit sint et reiciendis tempore, earum beatae maxime adipisci
+                assumenda odit. Impedit, doloremque delectus quod sit voluptates voluptas enim accusantium assumenda
+                quis nemo laborum sapiente libero quam accusamus. Quidem excepturi quaerat impedit,
+            </p>
+        </div>
+        <div id="about1">
+            <h1>About us</h1>
+            <div id="about">
+                <h2>OUR STORY SO FAR :</h2>
+                <p>
+                    Over the course of eight decades, a lot has changed about us. We have relocated, undergone
+                    expansion,
+                    developed new product lines & added segments, opened retail chains & stores across India and
+                    embraced
+                    new markets overseas. One thing hasn’t changed - we’re still a tight-knit family business, committed
+                    to
+                    serving the most authentic taste of India through our products.
+
+                    Our origins can be traced back to a small namkeen shop in Bikaner founded by Ganga Bishan Agarwal
+                    (Halvai Ji). This modest shop quickly gained popularity and scaled up to meet a booming demand for
+                    its
+                    unique-tasting bhujia. Building on this legacy, his grandson, our pioneer Mr. Shiv Kishan Agrawal
+                    steered the business towards the heights it has tasted today.
+
+                    Determined to take bhujia beyond the boundaries of Bikaner, he shifted base to Nagpur in 1970. We
+                    opened
+                    our first full-production unit to introduce a delectable variety of savouries, sweets and beverages
+                    to
+                    the market. The success of this venture led us to expand and evolve as a brand, that is an integral
+                    part
+                    of every Indian household.
+
+                    From our formative years, he instilled the value of keeping the tradition and quality intact, even
+                    as we
+                    matured as a company. All our products maintain a consistent sense of simplicity. The ingredients
+                    and
+                    recipes were picked to accentuate these ideas and are followed to this date. We promise that all our
+                    products are natural, wholesome and have a homemade feel to them.
+
+                    Although, Royal Palace is about more than just food. By creating a strong sense of community and
+                    supporting our associates, we continue to feel like a true family business. We carry these values
+                    with
+                    us as we operate together to serve generations of happy connoisseurs across the globe and continue
+                    to be
+                    the nation’s beloved snack-food company.
+
+                    As the age old saying goes, “The way to one’s heart courses through their stomach”. We want to leave
+                    no
+                    stone unturned to win your hearts.</p>
+            </div>
+        </div>
+
+        <div id="end">
+            <h1>Contact Us</h1>
+        </div>
+        <div id="contact-img">
+            <img src="footer.png" alt="" width="850px" height="400pc">
+            <h3>Contact No: +919864327356</h3>
+            <h3>Snackbazaar.com</h3>
+        </div>
+    </main>
+</body>
+
+</html>
